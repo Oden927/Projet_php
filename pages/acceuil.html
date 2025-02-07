@@ -5,45 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Page d'accueil du site de gestion des cours et absences.">
     <title>Accueil - Gestion Scolaire</title>
+    <link rel="stylesheet" href="../includes/styles.css"> <!-- Lien vers le fichier CSS externe -->
 </head>
 <body>
-<!-- Navigation menu -->
-<nav>
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="login.php">Connexion</a></li>
-        <li><a href="edt.html">Emploi du temps</a></li>
-        <li><a href="absences.html">Absences</a></li>
-        <li><a href="about.html">À propos</a></li>
-    </ul>
-</nav>
 
-<!-- Logo de l'école -->
-<img src="../assets/image/logo.png" alt="Logo de l'école" width="200">
+<!-- En-tête avec le logo et la navigation -->
+<header>
+    <img src="../assets/image/logo.png" alt="Logo officiel de l'école Gestion Scolaire" width="200">
+    <nav aria-label="Navigation principale">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="login.php">Connexion</a></li>
+            <li><a href="edt.html">Emploi du temps</a></li>
+            <li><a href="absences.html">Absences</a></li>
+            <li><a href="about.html">À propos</a></li>
+        </ul>
+    </nav>
+</header>
 
-<!-- Titre et sous-titre -->
-<h1>Bienvenue sur la plateforme de gestion des cours</h1>
-<h2>Nanterre</h2>
+<!-- Contenu principal -->
+<main>
+    <section id="introduction">
+        <h1>Bienvenue sur la plateforme de gestion des cours</h1>
+        <h2>Université de Nanterre</h2>
+        <p>Connectez-vous pour accéder à vos informations personnelles.</p>
+        <a href="login.php" class="btn">Se connecter</a>
+    </section>
 
-<!-- Accès rapide -->
-<p>Connectez-vous pour accéder à vos informations.</p>
-<a href="login.php">Se connecter</a>
+    <!-- Section Présentation -->
+    <section id="presentation">
+        <h2>À propos de la plateforme</h2>
+        <p>Cette plateforme permet aux élèves et aux professeurs de gérer les emplois du temps, les absences et les cours.</p>
+    </section>
 
-<!-- Section de presentation -->
-<section id="presentation">
-    <h2>À propos de la plateforme</h2>
-    <p>Cette plateforme permet aux élèves et aux professeurs de gérer les emplois du temps, les absences et les cours.</p>
-</section>
-
-<!-- Section des raccourcis -->
-<section id="raccourcis">
-    <h2>Accès rapide</h2>
-    <ul>
-        <li><a href="edt.html">Consulter mon emploi du temps</a></li>
-        <li><a href="absences.html">Gérer mes absences</a></li>
-        <li><a href="about.html">En savoir plus</a></li>
-    </ul>
-</section>
+    <!-- Section des raccourcis -->
+    <section id="raccourcis">
+        <h2>Accès rapide</h2>
+        <ul>
+            <li><a href="edt.html">Consulter mon emploi du temps</a></li>
+            <li><a href="absences.html">Gérer mes absences</a></li>
+            <li><a href="about.html">En savoir plus</a></li>
+        </ul>
+    </section>
+</main>
 
 <!-- Pied de page -->
 <footer>
@@ -52,5 +56,3 @@
 
 </body>
 </html>
-
-
