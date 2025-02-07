@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestion des absences des élèves.">
+    <title>Gestion des Absences</title>
+    <link rel="stylesheet" href="../includes/styles.css"> <!-- Lien vers le CSS -->
+</head>
+<body>
+
+<header>
+    <h1>Gestion des Absences</h1>
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="edt.html">Emploi du temps</a></li>
+            <li><a href="absences.html">Absences</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="logout.html">Déconnexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="ajout-absence">
+        <h2>Déclarer une absence</h2>
+        <form action="ajouter_absence.php" method="POST" enctype="multipart/form-data">
+            <label for="date">Date d'absence :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="debut">Heure de début :</label>
+            <input type="time" id="debut" name="debut" required>
+
+            <label for="fin">Heure de fin :</label>
+            <input type="time" id="fin" name="fin" required>
+
+            <label for="raison">Motif :</label>
+            <textarea id="raison" name="raison" placeholder="Expliquez la raison de votre absence..." required></textarea>
+
+            <label for="justificatif">Justificatif (optionnel) :</label>
+            <input type="file" id="justificatif" name="justificatif" accept=".pdf, .jpg, .png, .doc, .docx">
+
+            <button type="submit">Enregistrer l'absence</button>
+        </form>
+    </section>
+
+    <section id="liste-absences">
+        <h2>Mes Absences</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Heure de début</th>
+                <th>Heure de fin</th>
+                <th>Motif</th>
+                <th>Justificatif</th>
+                <th>Statut</th>
+            </tr>
+            <!-- Exemple statique -->
+            <tr>
+                <td>07/02/2025</td>
+                <td>08:30</td>
+                <td>10:00</td>
+                <td>Consultation médicale</td>
+                <td><a href="#">Voir</a></td>
+                <td>En attente</td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Gestion Scolaire - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
